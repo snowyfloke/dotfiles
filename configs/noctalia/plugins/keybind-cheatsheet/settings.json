@@ -1,0 +1,260 @@
+{
+  "cheatsheetData": [
+    {
+      "title": "SISTEMA",
+      "binds": [
+        {
+          "keys": "Super + Q",
+          "desc": "Fechar Janela Ativa"
+        },
+        {
+          "keys": "Super + V",
+          "desc": "Ativar modo flutuante das janelas"
+        },
+        {
+          "keys": "Super + P",
+          "desc": "dwindle"
+        },
+        {
+          "keys": "Super + J",
+          "desc": "dwindle"
+        },
+        {
+          "keys": "Super + LEFT",
+          "desc": "Move o foco para a esquerda"
+        },
+        {
+          "keys": "Super + RIGHT",
+          "desc": "Move o foco para a direita"
+        },
+        {
+          "keys": "Super + UP",
+          "desc": "Move o foco para cima"
+        },
+        {
+          "keys": "Super + DOWN",
+          "desc": "Move o foco para baixo"
+        },
+        {
+          "keys": "Super + SPACE",
+          "desc": "Abre o lançador de apps"
+        },
+        {
+          "keys": "Super + COMMA",
+          "desc": "Abre as configurações"
+        },
+        {
+          "keys": "Super + 1",
+          "desc": "Troca Visualização a Área de trabalho 1"
+        },
+        {
+          "keys": "Super + 2",
+          "desc": "Troca Visualização a Área de trabalho 2"
+        },
+        {
+          "keys": "Super + 3",
+          "desc": "Troca Visualização a Área de trabalho 3"
+        },
+        {
+          "keys": "Super + 4",
+          "desc": "Troca Visualização a Área de trabalho 4"
+        },
+        {
+          "keys": "Super + 5",
+          "desc": "Troca Visualização a Área de trabalho 5"
+        },
+        {
+          "keys": "Super + 6",
+          "desc": "Troca Visualização a Área de trabalho 6"
+        },
+        {
+          "keys": "Super + 7",
+          "desc": "Troca Visualização a Área de trabalho 7"
+        },
+        {
+          "keys": "Super + 8",
+          "desc": "Troca Visualização a Área de trabalho 8"
+        },
+        {
+          "keys": "Super + 9",
+          "desc": "Troca Visualização a Área de trabalho 9"
+        },
+        {
+          "keys": "Super + 0",
+          "desc": "Troca Visualização a Área de trabalho 10"
+        },
+        {
+          "keys": "Super + Shift + 1",
+          "desc": "Troca a janela focada para a Área de trabalho 1"
+        },
+        {
+          "keys": "Super + Shift + 2",
+          "desc": "Troca a janela focada para a Área de trabalho 2"
+        },
+        {
+          "keys": "Super + Shift + 3",
+          "desc": "Troca a janela focada para a Área de trabalho 3"
+        },
+        {
+          "keys": "Super + Shift + 4",
+          "desc": "Troca a janela focada para a Área de trabalho 4"
+        },
+        {
+          "keys": "Super + Shift + 5",
+          "desc": "Troca a janela focada para a Área de trabalho 5"
+        },
+        {
+          "keys": "Super + Shift + 6",
+          "desc": "Troca a janela focada para a Área de trabalho 6"
+        },
+        {
+          "keys": "Super + Shift + 7",
+          "desc": "Troca a janela focada para a Área de trabalho 7"
+        },
+        {
+          "keys": "Super + Shift + 8",
+          "desc": "Troca a janela focada para a Área de trabalho 8"
+        },
+        {
+          "keys": "Super + Shift + 9",
+          "desc": "Troca a janela focada para a Área de trabalho 9"
+        },
+        {
+          "keys": "Super + Shift + 0",
+          "desc": "Troca a janela focada para a Área de trabalho 10"
+        },
+        {
+          "keys": "Super + Scroll Down",
+          "desc": "Move para a próxima Área de trabalho"
+        },
+        {
+          "keys": "Super + Scroll Up",
+          "desc": "Move para a Área de trabalho anterior"
+        },
+        {
+          "keys": "Super + Left Click",
+          "desc": "Move a janela ativa"
+        },
+        {
+          "keys": "Super + Right Click",
+          "desc": "Redimensiona a janela ativa"
+        }
+      ]
+    },
+    {
+      "title": "DISPOSITIVO",
+      "binds": [
+        {
+          "keys": "Vol Up",
+          "desc": "Aumenta o áudio em 5%"
+        },
+        {
+          "keys": "Vol Down",
+          "desc": "Diminui o áudio em 5%"
+        },
+        {
+          "keys": "Mute",
+          "desc": "Muta o áudio"
+        },
+        {
+          "keys": "Mic Mute",
+          "desc": "Muta o microfone"
+        },
+        {
+          "keys": "Bright Up",
+          "desc": "Aumenta o brilho da tela em 5%"
+        },
+        {
+          "keys": "Bright Down",
+          "desc": "Diminui o brilho da tela em 5%"
+        },
+        {
+          "keys": "XF86KBDBRIGHTNESSUP",
+          "desc": "Aumenta o brilho do teclado interno"
+        },
+        {
+          "keys": "XF86KBDBRIGHTNESSDOWN",
+          "desc": "diminui o brilho do teclaod interno"
+        },
+        {
+          "keys": "Next",
+          "desc": "Próxima música"
+        },
+        {
+          "keys": "Pause",
+          "desc": "Pausa a Música"
+        },
+        {
+          "keys": "Play",
+          "desc": "Despausa a Música"
+        },
+        {
+          "keys": "Prev",
+          "desc": "Volta uma música"
+        }
+      ]
+    },
+    {
+      "title": "SCRIPTS",
+      "binds": [
+        {
+          "keys": "Super + Shift + C",
+          "desc": "Abrir seletor de cores"
+        },
+        {
+          "keys": "Super + S",
+          "desc": "Tirar print da janela inteira"
+        },
+        {
+          "keys": "Super + Shift + S",
+          "desc": "Tirar print de uma área da tela"
+        },
+        {
+          "keys": "Super + W",
+          "desc": "Troca o wallpaper e gera cores baseadas nele."
+        }
+      ]
+    },
+    {
+      "title": "APPS",
+      "binds": [
+        {
+          "keys": "Super + E",
+          "desc": "Abre o explorador de arquivos"
+        },
+        {
+          "keys": "Super + Shift + E",
+          "desc": "Abre o explorador de arquivos TUI"
+        },
+        {
+          "keys": "Super + T",
+          "desc": "Abrir terminal padrão"
+        },
+        {
+          "keys": "Super + B",
+          "desc": "Abrir navegador padrão"
+        },
+        {
+          "keys": "Super + D",
+          "desc": "Abrir Discord"
+        },
+        {
+          "keys": "Super + O",
+          "desc": "Abrir OBS"
+        },
+        {
+          "keys": "Super + M",
+          "desc": "Abrir Spotify"
+        }
+      ]
+    }
+  ],
+  "detectedCompositor": "hyprland",
+  "windowWidth": 900,
+  "windowHeight": 850,
+  "autoHeight": true,
+  "columnCount": 1,
+  "modKeyVariable": "$mod",
+  "hyprlandConfigPath": "~/.config/hypr/modules/input.conf",
+  "niriConfigPath": "~/.config/niri/config.kdl"
+}

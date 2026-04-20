@@ -20,7 +20,7 @@ INCLUDED_CONFIGS=(
   noctalia.json
 )
 mkdir -p "$HOME/dotfiles/configs"
-for entry in "${INCLUDED_CONFIGS[0]}"; do
+for entry in "${INCLUDED_CONFIGS[@]}"; do
   src="$CONFIG_ORIGIN/$entry"
   if [ -e "$src" ]; then
     cp -rf "$src" "$DESTINATION/configs/$entry"
