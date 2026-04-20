@@ -3,6 +3,8 @@
 DESTINATION="$HOME/dotfiles"
 CONFIG_ORIGIN="$HOME/.config"
 
+rm -rf $DESTINATION/configs $DESTINATION/assets $DESTINATION/scripts $DESTINATION/shell
+
 INCLUDED_CONFIGS=(
   hypr
   btop
@@ -56,6 +58,25 @@ if [ -d "$FONTS_SRC" ]; then
   echo "$FONT_COUNT fonts found"
 else
   echo "No fonts found in $FONTS_SRC, is it still the right path?"
+fi
+
+THEMES_SRC="$HOME/.local/share/icons"
+THEMES_ALT_SRC="/usr/share/icons"
+if [ -d "$THEMES_SRC" ]; then
+  mkdir -p "$DESTINATION/assets"
+  cp -rf "$THEMES_SRC" "$DESTINATION/assets/"
+  TH_COUNT=$(find "$DESTINATION/assets/icons" -type f | wc -l)
+  echo "$TH_COUNT themes found"
+else
+  echo "No themes found in $THEMES_SRC, is it still the right path?"
+fi
+if [ -d "$THEMES_ALT_SRC" ]; then
+  mkdir -p "$DESTINATION/assets/alt-icons"
+  cp -rf "$THEMES_ALT_SRC" "$DESTINATION/assets/alt-icons"
+  ALT_TH_COUNT=$(find "$DESTINATION/assets/alt-icons" -type f | wc -l)
+  echo "$ALT_TH_COUNT themes found"
+else
+  echo "No wallpapers found in $THEMES_ALT_SRC, is it still the right path?"
 fi
 
 WALLPAPER_SRC="$HOME/wallpaper"

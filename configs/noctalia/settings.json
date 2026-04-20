@@ -427,7 +427,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": false,
+        "darkMode": true,
         "generationMethod": "vibrant",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -554,16 +554,6 @@
                     },
                     {
                         "defaultSettings": {
-                            "startOnMonday": true
-                        },
-                        "id": "plugin:calendar-widget",
-                        "scale": 0.96,
-                        "showBackground": true,
-                        "x": 20,
-                        "y": 160
-                    },
-                    {
-                        "defaultSettings": {
                             "completedCount": 0,
                             "count": 0,
                             "current_page_id": 0,
@@ -606,7 +596,7 @@
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
         "dockType": "floating",
-        "enabled": false,
+        "enabled": true,
         "floatingRatio": 1,
         "groupApps": true,
         "groupClickAction": "cycle",
@@ -624,7 +614,10 @@
         ],
         "onlySameOutput": true,
         "pinnedApps": [
-            "zen"
+            "zen",
+            "kitty",
+            "dev.vencord.Vesktop",
+            "spotify"
         ],
         "pinnedStatic": false,
         "position": "bottom",
