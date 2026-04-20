@@ -1,0 +1,9 @@
+{
+  "isSystemActive": true,
+  "borderSize": 2,
+  "overlayPath": "~/.cache/noctalia/HVE/overlay.conf",
+  "autoApply": true,
+  "activeAnimFile": "02_inercia_elastica.conf",
+  "activeBorderFile": "",
+  "activeShaderFile": ""
+}

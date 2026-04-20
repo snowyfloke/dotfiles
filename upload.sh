@@ -50,8 +50,8 @@ done
 
 FONTS_SRC="$HOME/.local/share/fonts"
 if [ -d "$FONTS_SRC" ]; then
-  mkdir -p "$DESTINATION/assets/fonts"
-  cp -rf "$FONTS_SRC" "$DESTINATION/assets/fonts"
+  mkdir -p "$DESTINATION/assets"
+  cp -rf "$FONTS_SRC" "$DESTINATION/assets/"
   FONT_COUNT=$(find "$DESTINATION/assets/fonts" -type f | wc -l)
   echo "$FONT_COUNT fonts found"
 else
@@ -60,8 +60,8 @@ fi
 
 WALLPAPER_SRC="$HOME/wallpaper"
 if [ -d "$WALLPAPER_SRC" ]; then
-  mkdir -p "$DESTINATION/assets/wallpaper"
-  cp -rf "$WALLPAPER_SRC" "$DESTINATION/assets/wallpaper"
+  mkdir -p "$DESTINATION/assets"
+  cp -rf "$WALLPAPER_SRC" "$DESTINATION/assets/"
   WP_COUNT=$(find "$DESTINATION/assets/wallpaper" -type f | wc -l)
   echo "$WP_COUNT wallpapers found"
 else
@@ -70,8 +70,7 @@ fi
 
 SCRIPTS_DIR="$HOME/scripts"
 if [ -d "$SCRIPTS_DIR" ]; then
-  mkdir -p "$DESTINATION/scripts"
-  cp -rf "$SCRIPTS_DIR" "$DESTINATION/scripts"
+  cp -rf "$SCRIPTS_DIR" "$DESTINATION"
 else
   echo "No scripts found in $SCRIPTS_DIR, is it still the right path?"
 fi
