@@ -427,7 +427,7 @@
         ]
     },
     "colorSchemes": {
-        "darkMode": true,
+        "darkMode": false,
         "generationMethod": "vibrant",
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
@@ -753,7 +753,7 @@
     "nightLight": {
         "autoSchedule": false,
         "dayTemp": "6500",
-        "enabled": true,
+        "enabled": false,
         "forced": false,
         "manualSunrise": "06:00",
         "manualSunset": "22:00",

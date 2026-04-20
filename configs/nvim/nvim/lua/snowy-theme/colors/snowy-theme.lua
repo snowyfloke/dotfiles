@@ -1,1 +1,0 @@
-require("snowy-theme").setup()
