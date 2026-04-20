@@ -20,6 +20,8 @@ CONFIG_ORIGIN="$HOME/dotfiles/configs"
 SHELL_ORIGIN="$HOME/dotfiles/shell"
 FONTS_ORIGIN="$HOME/dotfiles/assets/fonts"
 WALLPAPER_ORIGIN="$HOME/dotfiles/assets/wallpaper"
+THEME_ORIGIN="$HOME/dotfiles/assets/icons"
+ALT_THEME_ORIGIN="$HOME/dotfiles/assets/alt-icons"
 
 PACKAGES=(
   hyprland
@@ -59,6 +61,16 @@ fi
 if [ -d "$WALLPAPER_ORIGIN" ]; then
   mkdir -p "$HOME/wallpaper"
   cp -rf "$WALLPAPER_ORIGIN" "$HOME/wallpaper"
+fi
+
+if [ -d "$THEME_ORIGIN" ]; then
+  mkdir -p "$HOME/.local/share/icons"
+  cp -rf "$THEME_ORIGIN" "$HOME/.local/share/"
+fi
+
+if [ -d "$ALT_THEME_ORIGIN" ]; then
+  sudo mkdir -p /usr/share/icons
+  sudo cp -rf "$ALT_THEME_ORIGIN" /usr/share/icons
 fi
 
 echo "Installed dotfiles! Restart your machine"
