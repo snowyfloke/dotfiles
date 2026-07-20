@@ -1,0 +1,9 @@
+# Automatic dark/light switching
+theme = noctalia
+
+# Or set individual themes
+# theme = Rose Pine
+# theme = Rose Pine Moon
+# theme = Rose Pine Dawn
+#
+confirm-close-surface = false

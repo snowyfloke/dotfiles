@@ -1,0 +1,5 @@
+menu = "qs -c noctalia-shell ipc call launcher toggle"
+fileManager = "hyprfm"
+terminal = "ghostty"
+tuiFileManager = "yazi"
+browser = "zen-browser"

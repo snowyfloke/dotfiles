@@ -1,0 +1,34 @@
+[appearance]
+anim_curve_enter = 'OutCubic'
+anim_curve_exit = 'InCubic'
+anim_curve_transition = 'Bezier'
+anim_duration = 200
+anim_duration_fast = 100
+anim_duration_slow = 350
+animations_enabled = true
+radius_large = 32
+radius_medium = 28
+radius_small = 24
+transparency_enabled = true
+transparency_level = 0.56999999999999995
+
+[bookmarks]
+paths = [ '~/Projetos', '~/Músicas', '~/Vídeos', '~/nextcloud' ]
+
+[general]
+font_family = 'JetBrainsMono Nerd Font Propo'
+icon_theme = 'Adwaita'
+remember_sort_per_folder = true
+show_hidden = true
+sort_ascending = true
+sort_by = 'name'
+theme = 'catppuccin-mocha'
+
+[sidebar]
+position = 'left'
+visible = true
+width = 160
+
+[window]
+button_layout = ':minimize,maximize,close'
+show_controls = false
