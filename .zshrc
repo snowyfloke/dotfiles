@@ -1,11 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.local/cargo/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export EDITOR="nvim"
-export SUDO_EDITOR="nvim"
-export VISUAL="nvim"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -73,7 +70,21 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git
+  colorize
+  archlinux
+  command-not-found
+  common-aliases
+  dotenv
+  emoji
+  fzf
+  git
+  pip
+  ssh
+  vscode
+  docker
+  docker-compose
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -85,14 +96,14 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='nvim'
+fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch $(uname -m)"
+export ARCHFLAGS="-arch $(uname -m)"
 
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
@@ -103,12 +114,15 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+eval "$(starship init zsh)"
+fastfetch
 
 alias reload-shell='source $HOME/.zshrc'
 
-alias h='eval "$(history -p \!\! | awk '''{print $1}''')" --help' 
+alias h='eval "$(history -p \!\! | awk '''{print $1}''')" --help'
 
 alias ls='ls --color=auto'
 alias ip='ip --color=auto'
@@ -116,21 +130,6 @@ alias gcc='gcc -fdiagnostics-color=auto'
 alias grep='grep --color=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
-
-alias yays="yay -Sl | fzf --multi | awk '{print $2}' | xargs -ro yay -S"
-alias yayr='yay -Qq | fzf -m --preview "yay -Qi {1}" --preview-window=right:60% | xargs -ro yay -Rns'
-alias installed-packages='yay -Qq | fzf -m --preview "yay -Qi {1}" --preview-window=right:60% | xargs -r echo "Selected packages:"'
-
-alias ssh="TERM=xterm-256color ssh"
-
-export QT_QPA_PLATFORMTHEME=gtk3
-export XCURSOR_SIZE=24
-export GTK_IM_MODULE=simple
-export EDITOR=nvim
-
-
-eval "$(starship init zsh)"
-fastfetch
 
 function config() {
   if [ -d "$HOME/.config/$1" ]; then
@@ -142,4 +141,7 @@ function config() {
   fi
 }
 
-export PATH=$PATH:/home/yasmin/.spicetify
+export QT_QPA_PLATFORMTHEME=gtk3
+export XCURSOR_SIZE=24
+export GTK_IM_MODULE=simple
+export EDITOR=nvim
